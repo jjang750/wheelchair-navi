@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>휠체어 내비 개인정보처리방침</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;max-width:760px;margin:0 auto;padding:32px 20px 64px;line-height:1.7;color:#222;background:#fff}
+  h1{font-size:26px;margin-bottom:4px}
+  h2{font-size:19px;margin-top:36px;border-bottom:1px solid #e5e5e5;padding-bottom:6px}
+  .meta{color:#666;font-size:14px}
+  table{border-collapse:collapse;width:100%;font-size:15px;margin:12px 0}
+  th,td{border:1px solid #ddd;padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#f5f7fa}
+  .box{background:#eaf3ff;border-radius:10px;padding:14px 16px;margin:16px 0}
+  .en{margin-top:56px;padding-top:24px;border-top:2px solid #ddd;color:#444;font-size:15px}
+  code{background:#f2f2f2;padding:1px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+
+<h1>휠체어 내비 개인정보처리방침</h1>
+<p class="meta">앱 이름: 휠체어 내비 (패키지명 <code>com.panthip.app.wheelchairmap</code>) · 시행일: 2026년 9월 13일</p>
+
+<div class="box">
+<strong>요약</strong><br>
+휠체어 내비는 <strong>개인정보를 수집·저장하지 않습니다.</strong> 회원가입, 로그인, 광고, 분석(애널리틱스) 도구가 없습니다.
+앱은 현재 위치 기준으로 전동휠체어 이동 가능 영역을 계산하기 위해 기기의 <strong>위치 정보를 일시적으로 이용</strong>하며,
+이 좌표는 계산 목적으로만 외부 지도·경로 서비스에 전달되고 어디에도 저장되지 않습니다.
+</div>
+
+<h2>1. 수집하는 개인정보</h2>
+<p>없습니다. 이름, 이메일, 전화번호, 계정 정보, 기기 식별자(광고 ID 등), 연락처, 사진 등 어떠한 개인정보도 수집하지 않습니다.
+사용자가 입력하는 배터리 잔량, 완충 최대거리, 안전여유 값은 앱 실행 중 화면 계산에만 사용되며 서버로 전송되거나 기기에 저장되지 않습니다.</p>
+
+<h2>2. 위치 정보의 이용</h2>
+<table>
+<tr><th style="width:28%">항목</th><th>내용</th></tr>
+<tr><td>이용 목적</td><td>현재 위치를 기준으로 도로망 기반 이동 가능 영역(도달권)과 경사(고도) 보정을 계산하고 지도에 표시</td></tr>
+<tr><td>취득 방법</td><td>사용자가 위치 권한을 허용한 경우, 앱 사용 중(포그라운드)에만 기기 GPS로 현재 좌표를 취득. 백그라운드 위치 추적 없음</td></tr>
+<tr><td>보관</td><td>보관하지 않음. 좌표는 메모리에서 계산에 사용된 후 앱 종료 시 소멸. 위치 이력을 기록하지 않음</td></tr>
+<tr><td>권한 거부 시</td><td>지도 열람은 가능하나 현재 위치 기반 계산 기능은 사용할 수 없음. 설정에서 언제든 권한을 철회할 수 있음</td></tr>
+</table>
+
+<h2>3. 외부 서비스로의 전송(처리 위탁)</h2>
+<p>계산과 지도 표시를 위해 아래 서비스에 <strong>현재 위치 좌표(위도·경도)</strong>가 전송됩니다. 개인을 식별할 수 있는 다른 정보는 함께 전송되지 않으며, 본 앱은 해당 서비스에 사용자 계정을 만들지 않습니다.</p>
+<table>
+<tr><th style="width:28%">서비스</th><th>전송 정보</th><th>목적</th></tr>
+<tr><td>카카오맵 SDK<br><span class="meta">(주)카카오</span></td><td>지도 표시 영역 좌표, 앱 인증 키</td><td>지도 화면 표시. <a href="https://www.kakao.com/policy/privacy" target="_blank" rel="noopener">카카오 개인정보처리방침</a></td></tr>
+<tr><td>OpenRouteService<br><span class="meta">Heidelberg Institute for Geoinformation Technology (HeiGIT), 독일</span></td><td>현재 위치 좌표, 이동 가능 거리(m), 경로 옵션, 고도 조회용 표본 좌표</td><td>도로망 기반 도달권 폴리곤 계산, 고도(SRTM) 조회. <a href="https://openrouteservice.org/privacy-policy/" target="_blank" rel="noopener">ORS 개인정보처리방침</a></td></tr>
+</table>
+<p>위 서비스는 각사의 방침에 따라 요청 처리를 위한 서버 로그(IP 주소 등)를 일시 보관할 수 있습니다. 본 앱 운영자는 해당 로그에 접근하지 않습니다.</p>
+
+<h2>4. 앱이 요구하는 권한</h2>
+<table>
+<tr><th style="width:36%">권한</th><th>용도</th></tr>
+<tr><td><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code></td><td>현재 위치 취득 (앱 사용 중에만)</td></tr>
+<tr><td><code>INTERNET</code></td><td>지도 타일 및 도달권·고도 계산 API 통신</td></tr>
+</table>
+
+<h2>5. 쿠키·광고·분석 도구</h2>
+<p>사용하지 않습니다. 광고 SDK, 크래시 리포팅, 사용 통계 수집 도구가 포함되어 있지 않습니다.</p>
+
+<h2>6. 아동의 개인정보</h2>
+<p>본 앱은 개인정보를 수집하지 않으므로 만 14세 미만 아동의 개인정보도 수집하지 않습니다.</p>
+
+<h2>7. 이용자의 권리</h2>
+<p>수집·보관하는 개인정보가 없어 열람·정정·삭제 대상 정보가 존재하지 않습니다. 위치 권한은 기기 설정 &gt; 애플리케이션 &gt; 휠체어 내비 &gt; 권한에서 언제든 변경할 수 있습니다.</p>
+
+<h2>8. 방침의 변경</h2>
+<p>기능 추가로 처리 내용이 달라질 경우 본 페이지를 갱신하고 시행일을 변경합니다. 중요한 변경은 앱 업데이트 안내에 함께 기재합니다.</p>
+
+<h2>9. 문의</h2>
+<p>개인정보 관련 문의: <a href="mailto:jjang750@aegisep.com">jjang750@aegisep.com</a></p>
+
+<div class="en">
+<h2 style="border:none;margin-top:0">Privacy Policy (English summary)</h2>
+<p><strong>Wheelchair Navi</strong> (<code>com.panthip.app.wheelchairmap</code>) does <strong>not collect or store any personal data</strong>. There is no account, sign-in, advertising, or analytics.</p>
+<p>The app uses the device's <strong>location while in use</strong> (no background tracking) to compute the reachable area for a powered wheelchair. The current coordinates are sent only to the services required for that computation and are not stored anywhere by the app:</p>
+<ul>
+<li><strong>Kakao Map SDK</strong> (Kakao Corp.) — map rendering. <a href="https://www.kakao.com/policy/privacy" target="_blank" rel="noopener">Privacy policy</a></li>
+<li><strong>OpenRouteService</strong> (HeiGIT, Germany) — isochrone (reachable-area) and elevation (SRTM) computation. <a href="https://openrouteservice.org/privacy-policy/" target="_blank" rel="noopener">Privacy policy</a></li>
+</ul>
+<p>Permissions: <code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>, <code>INTERNET</code>. You can revoke location permission at any time in system settings. Contact: <a href="mailto:jjang750@aegisep.com">jjang750@aegisep.com</a>. Effective date: September 13, 2026.</p>
+</div>
+
+</body>
+</html>
